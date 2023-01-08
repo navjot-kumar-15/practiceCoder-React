@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import { useState } from "react";
+import Nav from "./Component/Nav/Nav";
+import Text from "./Component/TextForm/Text";
 function App() {
+  const [mode, setMode] = useState("light");
+  const [text, setText] = useState("");
+
+  const toggleMode = () => {
+    if (mode === "light") {
+      setMode("dark");
+      setText("Disable ");
+      document.body.style.backgroundColor = "#26212c";
+    } else {
+      setMode("light");
+      setText("Enable ");
+      document.body.style.backgroundColor = "white";
+    }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Nav
+        title="practiceCoder"
+        mode={mode}
+        toggleMode={toggleMode}
+        text={text}
+      />
+
+      <Text heading="Enter the text here to analyze below" mode={mode} />
+    </>
   );
 }
 
