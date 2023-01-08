@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/practiceCoder-React/static/css/main.bd42f3f7.css",
+    "main.js": "/practiceCoder-React/static/js/main.da315423.js",
+    "static/js/787.28cb0dcd.chunk.js": "/practiceCoder-React/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/practiceCoder-React/index.html",
+    "main.bd42f3f7.css.map": "/practiceCoder-React/static/css/main.bd42f3f7.css.map",
+    "main.da315423.js.map": "/practiceCoder-React/static/js/main.da315423.js.map",
+    "787.28cb0dcd.chunk.js.map": "/practiceCoder-React/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bd42f3f7.css",
+    "static/js/main.da315423.js"
+  ]
+}
